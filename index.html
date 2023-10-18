@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/style.css">
+    <script src="script.js"></script>
+</head>
+
+<body class="m-20">
+    <H1 class="my-3">Wie können wir Ihnen helfen?</H1>
+    <form class="my-5">
+        <div>
+            <H2 class="my-2">Ich möchte...</H2>
+            <input type="radio" id="Anfrage" name="fav_language" value="Anfrage">
+            <label for="Anfrage">Anfrage Stellen</label><br>
+            <input type="radio" id="Beschwerden" name="fav_language" value="Beschwerden">
+            <label for="Beschwerden">Beschwerden Einreichen</label><br>
+            <input type="radio" id="Störung" name="fav_language" value="Störung">
+            <label for="Störung">Störung Melden</label><br>
+            <input type="radio" id="Beratung" name="fav_language" value="Beratung">
+            <label for="Beratung">Beratung Anfragen</label>
+        </div>
+        <div>
+            <H3 class="my-5">Um was geht es?</H3>
+            <input type="radio" id="TV" name="fav_language" value="TV">
+            <label for="TV">TV</label><br>
+            <input type="radio" id="Mobile" name="fav_language" value="Mobile">
+            <label for="Mobile">Mobile</label><br>
+            <input type="radio" id="Internet" name="fav_language" value="Internet">
+            <label for="Internet">Internet</label><br>
+            <input type="radio" id="Kabelanschluss" name="fav_language" value="Kabelanschluss">
+            <label for="Kabelanschluss">Kabelanschluss</label>
+        </div>
+        <div>
+            <H4 class="my-5">Geben Sie Ihre Daten ein:</H4>
+            <label for="Antragsteller">Antragsteller\in</label>
+            <input type="text" id="Antragsteller" name="Antragsteller" class="border mr-3">
+            <label for="Partnernetz">Partnernetz Name</label>
+            <input type="text" id="Partnernetz" name="Partnernetz" class="border mr-3"><br>
+        </div>
+        <div class="py-5">
+            <label for="Kundennummer">Kundennummer</label>
+            <input type="text" id="Kundennummer" name="Kundennummer" class="border mr-3">
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="fname" class="border mr-3">
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" class="border mr-3"><br>
+        </div>
+        <div>
+            <label for="Anliegen">Ihr Anliegen:</label><br>
+            <textarea id="Anliegen" name="Anliegen" class="border mr-3 my-5 h-32 w-96 resize-none">
+        </textarea><br>
+        </div>
+        <input type="submit" value="Submit" class="border py-2 px-5">
+    </form>
+</body>
+
+</html>
