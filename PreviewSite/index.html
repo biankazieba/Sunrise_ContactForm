@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="px-5">
+        <div class="flex flex-row pt-10 px-2">
+            <div class="w-4/6 md:w-5/6 lg:w-5/6">
+                    <h1 class="xl:text-2xl md:text-2xl text-lg font-bold mb-2 lg:mb-4 color-primary">Übersichtsseite
+                        Kontaktformular
+                    </h1>
+                <div class="flex flex-row space-x-6 border-b-2 border-gray-200 mb-4 cursor-pointer md:text-sm text-xs">
+                    <p class="py-3 font-bold color-primary text-md underline" onclick="toggleUnderline(this)">Alle</p>
+                    <p class="py-3 font-bold color-primary text-md" onclick="toggleUnderline(this)">Anfrage</p>
+                    <p class="py-3 font-bold color-primary text-md" onclick="toggleUnderline(this)">Beschwerden einreichen</p>
+                    <p class="py-3 font-bold color-primary text-md" onclick="toggleUnderline(this)">Störung melden</p>
+                    <p class="py-3 font-bold color-primary text-md" onclick="toggleUnderline(this)">Beratung anfragen</p>
+                </div>
+
+            </div>
+            <div class="w-2/6 md:w-1/6 lg:w-1/6 grid justify-items-end">
+                <img alt="" src="./assets/img/SunriseLogo.png" class="w-14 md:w-20 lg:w-20">
+            </div>
+        </div>
+        <div class="flex flex-row pt-4">
+            <div class="flex flex-col w-1/3 px-2 md:text-xs font-bold color-primary text-sm">
+                <!--Formular Anfragen-->
+                <div class="flex flex-col md:flex-row lg:flex-row rounded border border-black px-2 py-3 mb-3 cursor-pointer" onclick="toggleSelected(this)">
+                    <div class="w-1/3">Anfrage</div>
+                    <div class="w-1/3 text-center">Internet</div>
+                    <div class="w-1/3 text-end">Vorname Name</div>
+                </div>
+                <div class="flex flex-col md:flex-row lg:flex-row rounded border border-black px-2 py-3 mb-3 cursor-pointer" onclick="toggleSelected(this)"> 
+                    <div class="w-1/3">Beratung</div>
+                    <div class="w-1/3 text-center">Mobile</div>
+                    <div class="w-1/3 text-end">Vorname Name</div>
+                </div>
+                <div class="flex flex-col md:flex-row lg:flex-row rounded border border-black px-2 py-3 mb-3  cursor-pointer" onclick="toggleSelected(this)">
+                    <div class="w-1/3">Störung</div>
+                    <div class="w-1/3 text-center">Kabelanschluss</div>
+                    <div class="w-1/3 text-end">Vorname Name</div>
+                </div>
+            </div>
+            <div class="w-2/3 px-2">
+                <div class="border-2 border-red-600 rounded font-bold color-primary px-5 py-5">
+                    <div class="flex flex-row text-lg border-b-2 border-gray-200 pb-3">
+                        <h3 class="w-1/3">Anfrage</h3>
+                        <h4 class="w-1/3 text-center">Internet</h4>
+                        <div class="grid justify-items-end w-1/3">
+                            <img alt="" src="/PreviewSite/assets/img/close-16px.svg" class="w-6">
+                        </div>
+                    </div>
+                    <div class="py-5 text-md space-y-3">
+                        <p>Antragsteller\in: <span class="font-normal">{Antragsteller\in}</span></p>
+                        <p>Partnernetz Name: <span class="font-normal">{PartnernetzName}</span></p>
+                        <p>Kundennummer: <span class="font-normal">{Kundennummer}</span></p>
+                        <p>Vorname: <span class="font-normal">{Vorname}</span></p>
+                        <p>Nachname: <span class="font-normal">{Nachname}</span></p>
+                        <p class="py-3">Anliegen: <span class="font-normal">{Anliegen}</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+
+</html>
